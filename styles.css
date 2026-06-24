@@ -56,11 +56,19 @@ img {
 .brand-mark {
   display: inline-flex;
   align-items: center;
+  gap: 12px;
 }
 
 .brand-logo {
   height: 56px;
   width: auto;
+}
+
+.brand-text {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #111111;
 }
 
 .site-nav {
@@ -257,6 +265,10 @@ h3 {
 
   .brand-logo {
     height: 46px;
+  }
+
+  .brand-text {
+    font-size: 1rem;
   }
 
   .site-nav {
