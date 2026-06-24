@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get a Cleaning Quote | Let's Cleaning</title>
+    <meta
+      name="description"
+      content="Submit a cleaning request with Let's Cleaning for homes, apartments, offices, rentals, and move-out cleanings."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://letscleaning.com/get-a-quote.html" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell nav-shell">
+        <a class="brand brand-mark" href="index.html" aria-label="Let's Cleaning home">
+          <img src="L Logo.png" alt="Let's Cleaning logo" class="brand-logo" />
+          <span class="brand-text">Let's Cleaning</span>
+        </a>
+        <nav class="site-nav">
+          <a href="services.html">Services</a>
+          <a href="get-a-quote.html">Get a Quote</a>
+          <a href="join-cleaner.html">Join as a Cleaner</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell interior-page">
+      <section class="page-intro">
+        <p class="eyebrow">For Customers</p>
+        <h1>Request a cleaning quote.</h1>
+        <p class="lead">
+          Tell us about your home, apartment, office, rental, or move-out cleaning needs
+          and we’ll follow up with the next steps and a custom quote.
+        </p>
+      </section>
+
+      <section class="detail-card booking-card">
+        <form class="booking-form" action="mailto:hello@letscleaning.com" method="post" enctype="text/plain">
+          <label>
+            Full Name
+            <input type="text" name="Full Name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="Email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="Phone" placeholder="(555) 555-5555" />
+          </label>
+          <label>
+            ZIP Code
+            <input type="text" name="ZIP Code" placeholder="Your ZIP code" />
+          </label>
+          <label>
+            Service Type
+            <select name="Service Type" required>
+              <option value="">Select a service</option>
+              <option>Standard Cleaning</option>
+              <option>Deep Cleaning</option>
+              <option>Move-In / Move-Out Cleaning</option>
+              <option>Office Cleaning</option>
+              <option>Airbnb Turnover</option>
+              <option>Custom Request</option>
+            </select>
+          </label>
+          <label>
+            Property Type
+            <input type="text" name="Property Type" placeholder="Apartment, house, office, rental" />
+          </label>
+          <label>
+            Bedrooms / Bathrooms
+            <input type="text" name="Bedrooms and Bathrooms" placeholder="Example: 2 bed / 2 bath" />
+          </label>
+          <label>
+            Preferred Date
+            <input type="date" name="Preferred Date" />
+          </label>
+          <label>
+            Project Details
+            <textarea name="Project Details" rows="6" placeholder="Tell us about the space, condition, and any special requests."></textarea>
+          </label>
+          <button class="button primary" type="submit">Submit Cleaning Request</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
