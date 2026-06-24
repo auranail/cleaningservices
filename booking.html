@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Cleaning Service | AU Cleaning</title>
+    <meta
+      name="description"
+      content="Book cleaning service with AU Cleaning for homes, apartments, rentals, offices, and move-out cleanings."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://letscleaning.com/booking.html" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell nav-shell">
+        <a class="brand" href="index.html">AU Cleaning</a>
+        <nav class="site-nav">
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="booking.html">Booking</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell interior-page">
+      <section class="page-intro">
+        <p class="eyebrow">Booking</p>
+        <h1>Book your cleaning service.</h1>
+        <p class="lead">
+          Tell AU Cleaning what kind of cleaning you need and we’ll follow up
+          with availability and pricing.
+        </p>
+      </section>
+
+      <section class="detail-card booking-card">
+        <form class="booking-form" action="mailto:hello@letscleaning.com" method="post" enctype="text/plain">
+          <label>
+            Full Name
+            <input type="text" name="Full Name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="Email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="Phone" placeholder="(555) 555-5555" />
+          </label>
+          <label>
+            Service Type
+            <select name="Service Type" required>
+              <option value="">Select a service</option>
+              <option>Standard Cleaning</option>
+              <option>Deep Cleaning</option>
+              <option>Move-In / Move-Out Cleaning</option>
+              <option>Office Cleaning</option>
+              <option>Airbnb Turnover</option>
+              <option>Custom Request</option>
+            </select>
+          </label>
+          <label>
+            Property Type
+            <input type="text" name="Property Type" placeholder="Apartment, house, office, rental" />
+          </label>
+          <label>
+            Preferred Date
+            <input type="date" name="Preferred Date" />
+          </label>
+          <label>
+            Details
+            <textarea name="Details" rows="6" placeholder="Tell us about the space, rooms, condition, and any special requests."></textarea>
+          </label>
+          <button class="button primary" type="submit">Send Booking Request</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
