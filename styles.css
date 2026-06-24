@@ -93,8 +93,9 @@ img {
   padding: 32px 0 28px;
 }
 
-.hero-marketplace {
-  padding-bottom: 36px;
+.intake-hero {
+  max-width: 760px;
+  padding-bottom: 18px;
 }
 
 .eyebrow,
@@ -212,7 +213,15 @@ h3 {
 }
 
 .pathway-card {
-  min-height: 240px;
+  min-height: 220px;
+}
+
+.intake-card {
+  margin-bottom: 20px;
+}
+
+.intake-support-grid {
+  margin-top: 8px;
 }
 
 .text-link {
@@ -237,6 +246,14 @@ h3 {
 .booking-form {
   display: grid;
   gap: 18px;
+}
+
+.intake-form {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.intake-form button {
+  grid-column: 1 / -1;
 }
 
 .booking-form label {
@@ -265,7 +282,8 @@ h3 {
 @media (max-width: 900px) {
   .preview-grid,
   .pricing-grid,
-  .split-grid {
+  .split-grid,
+  .intake-form {
     grid-template-columns: 1fr;
   }
 }
