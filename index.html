@@ -3,88 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Let's Cleaning | Get Matched for Cleaning Help</title>
+    <title>Let's Cleaning | Find Cleaning Help Near You</title>
     <meta
       name="description"
-      content="Start with your ZIP code, location, contact details, and cleaning needs to get matched for cleaning help with Let's Cleaning."
+      content="Find trusted cleaning help near you with Let's Cleaning. Search by service and ZIP code, request a quote, or join as a cleaner."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://letscleaning.com/" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="page-shell nav-shell">
+    <header class="site-header site-header-marketplace">
+      <div class="page-shell nav-shell nav-shell-marketplace">
         <a class="brand brand-mark" href="index.html" aria-label="Let's Cleaning home">
           <img src="L Logo.png" alt="Let's Cleaning logo" class="brand-logo" />
           <span class="brand-text">Let's Cleaning</span>
         </a>
-        <nav class="site-nav">
-          <a href="services.html">Services</a>
-          <a href="get-a-quote.html">Get a Quote</a>
-          <a href="join-cleaner.html">Join as a Cleaner</a>
+        <nav class="site-nav site-nav-marketplace">
+          <a href="services.html">Interior</a>
+          <a href="services.html">Move-Out</a>
+          <a href="services.html">Office</a>
+          <a href="services.html">More</a>
           <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
         </nav>
+        <div class="nav-actions">
+          <a href="get-a-quote.html">Find Cleaners</a>
+          <a href="join-cleaner.html">Join as a Cleaner</a>
+          <a class="button nav-button" href="contact.html">Contact</a>
+        </div>
       </div>
     </header>
 
-    <main class="page-shell page-home">
-      <section class="hero-block intake-hero">
-        <p class="eyebrow">Get Matched</p>
-        <h1>Tell us where you are and what you need.</h1>
-        <p class="lead">
-          Start with a few details and we’ll help match your cleaning request with
-          the right next step.
-        </p>
+    <main class="marketplace-home">
+      <section class="hero-search-section">
+        <div class="hero-image-overlay"></div>
+        <div class="page-shell hero-search-content">
+          <div class="hero-search-panel">
+            <h1>The one you trust to find the cleaners you trust.</h1>
+            <form class="hero-search-bar" action="https://form.jotform.com/261745422267156" method="get">
+              <input type="text" name="service" placeholder="What can we help you with?" required />
+              <input type="text" name="zip" placeholder="ZIP code" required />
+              <button type="submit" aria-label="Search cleaning help">Get Matched</button>
+            </form>
+          </div>
+        </div>
       </section>
 
-      <section class="detail-card intake-card">
-        <form class="booking-form intake-form" action="https://form.jotform.com/261745422267156" method="get">
-          <label>
-            ZIP Code
-            <input type="text" name="zip" placeholder="Enter your ZIP code" required />
-          </label>
-          <label>
-            City / Location
-            <input type="text" name="location" placeholder="City, neighborhood, or address" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" required />
-          </label>
-          <label>
-            Phone / Contact
-            <input type="tel" name="phone" placeholder="(555) 555-5555" required />
-          </label>
-          <label>
-            What do you need?
-            <select name="service" required>
-              <option value="">Select what you need</option>
-              <option>Standard Cleaning</option>
-              <option>Deep Cleaning</option>
-              <option>Move-In / Move-Out Cleaning</option>
-              <option>Office Cleaning</option>
-              <option>Airbnb Turnover</option>
-              <option>Custom Request</option>
-            </select>
-          </label>
-          <button class="button primary" type="submit">Get Matched</button>
-        </form>
+      <section class="category-strip">
+        <div class="page-shell category-grid">
+          <a class="category-item" href="services.html">
+            <span class="category-icon">🧽</span>
+            <span>House Cleaning</span>
+          </a>
+          <a class="category-item" href="services.html">
+            <span class="category-icon">✨</span>
+            <span>Deep Cleaning</span>
+          </a>
+          <a class="category-item" href="services.html">
+            <span class="category-icon">📦</span>
+            <span>Move-Out</span>
+          </a>
+          <a class="category-item" href="services.html">
+            <span class="category-icon">🏢</span>
+            <span>Office Cleaning</span>
+          </a>
+          <a class="category-item" href="services.html">
+            <span class="category-icon">🛏️</span>
+            <span>Airbnb Turnover</span>
+          </a>
+          <a class="category-item" href="get-a-quote.html">
+            <span class="category-icon">📋</span>
+            <span>Custom Request</span>
+          </a>
+        </div>
       </section>
 
-      <section class="split-grid intake-support-grid">
-        <article class="detail-card pathway-card">
-          <span class="card-label">How it works</span>
-          <h2>Submit your request first.</h2>
-          <p>Share your location, contact details, and cleaning needs so your request can be reviewed and matched.</p>
-        </article>
-        <article class="detail-card pathway-card">
-          <span class="card-label">For Cleaners</span>
-          <h2>Want to join the network?</h2>
-          <p>If you are a cleaner looking for leads, apply through the cleaner registration page and tell us your service area.</p>
-          <a class="text-link" href="join-cleaner.html">Join as a Cleaner</a>
-        </article>
+      <section class="marketplace-section page-shell">
+        <p class="section-kicker">Most requested cleaning help</p>
+        <h2>Start with your service and location.</h2>
+        <div class="split-grid intake-support-grid">
+          <article class="detail-card pathway-card">
+            <span class="card-label">For Customers</span>
+            <h3>Request a quote fast.</h3>
+            <p>Tell us what kind of cleaning you need, where you are located, and how to contact you.</p>
+            <a class="text-link" href="get-a-quote.html">Start your request</a>
+          </article>
+          <article class="detail-card pathway-card">
+            <span class="card-label">For Cleaners</span>
+            <h3>Join and receive leads.</h3>
+            <p>Apply as a cleaner, share your service area, and tell us what jobs you want to take.</p>
+            <a class="text-link" href="join-cleaner.html">Apply now</a>
+          </article>
+        </div>
       </section>
     </main>
   </body>
