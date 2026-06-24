@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://letscleaning.com/sitemap.xml
